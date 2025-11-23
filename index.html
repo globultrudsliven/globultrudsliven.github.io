@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Глобъл Труд Сливен</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background-color: #005a87;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    #services {
+      background-color: #f4f4f4;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #005a87;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+    #about, #contact {
+      text-align: center;
+    }
+    footer {
+      background-color: #005a87;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    @media(max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png">
+    <nav>
+      <a href="#about">За нас</a>
+      <a href="#whatWeDo">Нашата мисия</a>
+      <a href="#services">Какво предлагаме</a>
+      <a href="#us">Защо да изберете „Глобъл Труд Сливен“</a>
+      <a href="#contact">Къде да ни намерите</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>За нас</h2>
+    <p>Вашият доверен партньор в набирането на квалифицирани кадри от чужбина</p>
+
+    <p> „Глобъл Труд Сливен“ е новооткрита българска фирма, специализирана в набирането, подбора и посредничеството на чуждестранни работници за българския пазар на труда. Нашата мисия е да свързваме бизнесите в България с мотивирани и квалифицирани специалисти от различни държави, като създаваме стабилни и дългосрочни партньорства.</p>
+  </section>
+
+  <section id="whatWeDo">
+    <h2>Нашата мисия</h2>
+    <p>Да осигурим на българските работодатели надеждни и добре подготвени кадри, а на чуждестранните кандидати – реален шанс за развитие и стабилна работа в България.</p>
+  </section>
+
+  <section id="services">
+    <h2>Какво предлагаме</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="img/truck.svg" height="50" width="50"/>
+        <p>Подбор и наемане на персонал от страни извън ЕС.</p>
+      </div>
+      <div class="card">
+        <img src="img/edit.svg" height="50" width="50"/>
+        <p>Съдействие при подготовката на необходимите документи и разрешителни.</p>
+      </div>
+      <div class="card">
+        <img src="img/circle-check.svg" height="50" width="50"/>
+        <p>Организация на настаняване и адаптация на служителите.</p>
+      </div>
+      <div class="card">
+        <img src="img/message.svg" height="50" width="50"/>
+        <p>Подкрепа и консултации за работодатели и кандидати през целия процес.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="us">
+    <h2>Защо да изберете „Глобъл Труд Сливен“</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="img/edit.svg" height="50" width="50"/>
+        <p>Индивидуален подход към всеки клиент.</p>
+      </div>
+      <div class="card">
+        <img src="img/circle-check.svg" height="50" width="50"/>
+        <p>Професионализъм, коректност и прозрачност.</p>
+      </div>
+      <div class="card">
+        <img src="img/thumbs-up.svg" height="50" width="50"/>
+
+        <p>Съдействие от първоначалния контакт до успешното стартиране на работа.</p>
+      </div>
+      <div class="card">
+        <img src="img/user.svg" height="50" width="50"/>
+        <p>Млад и амбициозен екип, готов да отговори на нуждите на пазара.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Къде да ни намерите</h2>
+    <p>Ние сме базирани в гр. Сливен, но работим с клиенти от цяла България. Независимо дали сте работодател, който търси персонал, или кандидат, който търси работа – ние ще ви свържем!</p>
+    <img src="img/map.svg" height="20" width="20"/>
+    <p style="margin-top: 5px;">адрес: Сливен, ул.Славянска 9-6</p>
+
+    <p style="margin-top: 5px;">телефон: +359 89 200 0574</p>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Globul Trud Sliven. All rights reserved.</p>
+  </footer>
+</body>
+</html>
